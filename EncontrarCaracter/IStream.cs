@@ -8,7 +8,7 @@ namespace EncontrarCaracter
 {
     public interface IStream
     {
-        public char getNext();
-        public Boolean hasNext();
+         char getNext();
+         Boolean hasNext();
     }
 }

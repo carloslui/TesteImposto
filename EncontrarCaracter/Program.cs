@@ -10,13 +10,10 @@ namespace EncontrarCaracter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(firstChar("aAbBABacfe"));
+            Console.WriteLine(Pesquisa.PrimeiraVogalNaoRepetida(new StringStream("aAbBABacfe")));
             Console.ReadKey();
         }
 
-        public static char firstChar(IStream input)
-        {
-
-        }
+        
     }
 }
