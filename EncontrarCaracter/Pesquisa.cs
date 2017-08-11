@@ -30,12 +30,12 @@ namespace EncontrarCaracter
                 c = input.getNext();
 
                 // Verifica se é vogal 
-                if (indexOf(c, vogal))
+                if (PesquisarCaracter(c, vogal))
                 {
                     if (isConsoanteCharAnterior)
                     {
                         // Verifica se está repetida
-                        if (!indexOf(c, vogalLidas))
+                        if (!PesquisarCaracter(c, vogalLidas))
                         {
                             charNaoRepetido = c;
                         }
@@ -56,7 +56,7 @@ namespace EncontrarCaracter
          * Pesquisa do caracter na array chars
          * **/
         
-        private static bool indexOf(char c, char[] chars)
+        private static bool PesquisarCaracter(char c, char[] chars)
         {
             for (int i = 0; i < chars.Length; i++)
             {
