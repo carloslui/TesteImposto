@@ -62,9 +62,9 @@ namespace TesteImposto
             try
             {
                 txtBoxNomeCliente.Text = string.Empty;
-                txtEstadoDestino.Text = string.Empty;
-                txtEstadoOrigem.Text = string.Empty;
-                
+                cboEstadoDestino.SelectedIndex = -1;
+                cboEstadoOrigem.SelectedIndex = -1;
+
                 dataGridViewPedidos.AutoGenerateColumns = true;
                 dataGridViewPedidos.DataSource = GetTablePedidos();
                 ResizeColumns();
@@ -81,8 +81,8 @@ namespace TesteImposto
                 pedido = new Pedido();
 
                 NotaFiscalService NotaFiscalService = new NotaFiscalService();
-                pedido.EstadoOrigem = txtEstadoOrigem.Text;
-                pedido.EstadoDestino = txtEstadoDestino.Text;
+                pedido.EstadoOrigem = cboEstadoOrigem.Text;
+                pedido.EstadoDestino = cboEstadoDestino.Text;
                 pedido.NomeCliente = txtBoxNomeCliente.Text;
 
                 DataTable table = (DataTable)dataGridViewPedidos.DataSource;

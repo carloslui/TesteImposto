@@ -52,12 +52,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\TesteImposto\App.config">
+      <Link>App.config</Link>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EncontrarCaracter\EncontrarCaracter.csproj">
       <Project>{113e96f2-a5e8-4779-82de-f771a0daa08f}</Project>
       <Name>EncontrarCaracter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Imposto.Core\Imposto.Core.csproj">
+      <Project>{2339c0b3-1e95-4cd3-bfba-64b377857016}</Project>
+      <Name>Imposto.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
