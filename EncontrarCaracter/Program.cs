@@ -10,8 +10,22 @@ namespace EncontrarCaracter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Pesquisa.PrimeiraVogalNaoRepetida(new StringStream("aAbBABacfe")));
-            Console.ReadKey();
+            try
+            {
+                // Execução com a string informada no teste
+                Console.WriteLine(Pesquisa.PrimeiraVogalNaoRepetida(new StringStream("aAbBABacfe")));
+                Console.ReadKey();
+
+                // Execução com a string alterado para não localizar
+                Console.WriteLine(Pesquisa.PrimeiraVogalNaoRepetida(new StringStream("aAbBABacff")));
+                Console.ReadKey();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.ReadKey();
+            }
+            
         }
 
         

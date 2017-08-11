@@ -49,6 +49,11 @@ namespace EncontrarCaracter
 
             }
 
+            if (charNaoRepetido == char.MinValue)
+            {
+                throw new Exception("O caracter não foi localizado.");
+            }
+
             return charNaoRepetido;
         }
 
