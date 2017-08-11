@@ -8,6 +8,11 @@ namespace Imposto.Core.Domain
 {
     public class NotaFiscalDesconto : NotaFiscal
     {
+        /***
+         * 
+         *  Método para aplicar desconto nos itens da Nota Fiscal
+         *  
+         *  ***/
         public void AplicarDesconto()
         {
             try

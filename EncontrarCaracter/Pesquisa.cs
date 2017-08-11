@@ -51,6 +51,10 @@ namespace EncontrarCaracter
 
             return charNaoRepetido;
         }
+
+        /***
+         * Pesquisa do caracter na array chars
+         * **/
         
         private static bool indexOf(char c, char[] chars)
         {

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace EncontrarCaracter
 {
+    /***
+     * 
+     * **/
     public interface IStream
     {
          char getNext();

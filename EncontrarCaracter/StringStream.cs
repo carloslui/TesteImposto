@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace EncontrarCaracter
 {
+    /***
+     * 
+     * Implementação dos métodos da interface IStream
+     * 
+     * **/
     public class StringStream : IStream
     {
         private String stream;

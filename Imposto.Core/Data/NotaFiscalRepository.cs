@@ -12,6 +12,10 @@ namespace Imposto.Core.Data
 {
     public class NotaFiscalRepository
     {
+        /***
+         *  Método para persistir a Nota Fisca na Base de Dados
+         *  
+         *  ***/
         public void Incluir(NotaFiscal notaFiscal)
         {
             
@@ -69,6 +73,11 @@ namespace Imposto.Core.Data
             
         }
 
+        /***
+         * 
+         *  Método para pesquisa do Cfop
+         *  
+         *  ***/
         public string Cfop(string estadoOrigem, string estadoDestino)
         {
             string cfop = string.Empty;
